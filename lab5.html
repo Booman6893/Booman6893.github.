@@ -36,14 +36,14 @@
         svg.append('text')
         .attr('x', width/2 + 100)
         .attr('y', height - 15 + 150)
-        .attr('text-anchor', 'middle')
+        .attr('text-anchor', 'left')
         .style('font-family', 'Franklin Gothic Medium')
         .style('font-size', 12)
         .text('Severity (Independant)');
         
         // Y label
         svg.append('text')
-        .attr('text-anchor', 'middle')
+        .attr('text-anchor', 'left')
         .attr('transform', 'translate(60,' + height + ')rotate(-90)')
         .style('font-family', 'Franklin Gothic Medium')
         .style('font-size', 12)
@@ -113,7 +113,7 @@
             .attr("cy", d=> yScale(d.Accidents))
             .attr("r", 2)
             .attr("transform", "translate(" + 100 + "," + 100 + ")")
-            .style("fill", "#00cc000");
+            .style("fill", "#00cccc");
         });
 
   
